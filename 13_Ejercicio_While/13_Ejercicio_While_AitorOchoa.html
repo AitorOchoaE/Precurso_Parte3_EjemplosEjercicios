@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio While</title>
+</head>
+
+<body>
+    <script>
+        // Mostrar en pantalla una cuenta atrás de 10 a 0 (usando un while)
+        // y al llegar a 0 que muestre el texto ¡Despegue!
+        
+        //  **Manera 1**:
+        let countdown;
+        countdown = 10;
+        while (countdown >= 1) {  //paramos cuando sea 1
+            console.log(countdown);
+            countdown = countdown - 1;
+        }
+        console.log(countdown); //valor 0
+        console.log("¡Despegue!");
+        
+        //  **Manera 2**:
+        let countdown;
+        countdown = 10;
+        while (countdown >= 0) {  //paramos cuando sea 0
+            console.log(countdown);
+            countdown = countdown - 1; //en la última ronda será valor -1
+        }
+        console.log("¡Despegue!");
+        
+        //  **Manera 3**:
+        let countdown;
+        countdown = 10;
+        do {  //ejecutamos do antes del while al menos 1 vez
+            console.log(countdown);
+            countdown = countdown - 1;
+        } while (countdown >= 0);
+        console.log("¡Despegue!");
+
+    </script>
+</body>
+
+</html>
